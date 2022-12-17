@@ -2,39 +2,39 @@
 <img src="images/sre_checklist.png"/>
 </p>
 
-:dart: **Repository Purpose**: Provide teams and individuals an idea on what to take into consideration and what to aspire for in the SRE field and work
+:dart: **Propósito del respositorio**: Proporcionar a equipos e individuos una idea general sobre lo que hay que tener en cuanta y lo que hay que aspirar en el campo y trabajo del SRE.
 
-**Note**: these checklists are **opinionated**. They are based on my own opinion and experience and are not universal truth (duh! :smile:).
-So you should definitely doubt anything you read here and you are more than welcome to add your own opinion on the matter, by starting a discussion or proposing a change to the project
+**Nota**: Estos checklist son **opiniones**. Se basan en mi propia opinión y experiencia, no son verdades universales  (duh! :smile:).
+Así que no deberías dudar de lo que leas aquí y eres más que bienvenido a añadir tu propia opinión sobre el asunto, iniciando un debate o proponiendo un cambio en el [proyecto](https://github.com/bregman-arie/sre-checklist).
 
-:construction: You may say this repository is still in progress. I wouldn't treat it as complete source at this point or anything close to that. Contributions are more than welcome!
+:construction: Se puede decir que este repositorio está todavía en progreso (y la traducción también). Yo no lo trataría algo totalmente completo en este momento ni nada que se le parezca. ¡Las contribuciones son más que bienvenidas!
 
 - [Team :couple:](#team-couple)
-  - [Responsibilities](#responsibilities)
+  - [Responsabilidades](#responsibilities)
   - [Skills](#skills)
     - [Must](#must)
-    - [Optional](#optional)
+    - [Opcional](#opcional)
   - [Processes](#processes)
   - [SRE Team Goals](#sre-team-goals)
   - [SRE Lead](#sre-lead)
   - [New SRE Team Member](#new-sre-team-member)
-- [Production](#production)
-  - [Requirements](#requirements)
-  - [Provisioning](#provisioning)
-  - [Installation](#installation)
-  - [Deployment](#deployment)
-  - [Configuration](#configuration)
-  - [Resiliency](#resiliency)
-- [Technologies :computer:](#technologies-computer)
-  - [Git Repositories](#git-repositories)
+- [Producción](#producción)
+  - [Requerimientos](#requirements)
+  - [Aprovisionamiento](#provisioning)
+  - [Instalación](#installation)
+  - [Despliegue](#deployment)
+  - [Configuración](#configuration)
+  - [Resilencia](#resiliency)
+- [Tecnologías :computer:](#technologies-computer)
+  - [Repositorios Git](#git-repositories)
     - [CI](#ci)
-    - [Security](#security)
-    - [Automation](#automation)
+    - [Seguridad](#security)
+    - [Automatización](#automation)
   - [Cloud](#cloud)
-    - [Provisioning](#provisioning-1)
+    - [Aprovisionamiento](#provisioning-1)
     - [Tracking and Monitoring](#tracking-and-monitoring)
     - [Accounts](#accounts)
-    - [Resources](#resources)
+    - [Recursos](#resources)
     - [Reliability](#reliability)
   - [Kubernetes](#kubernetes)
     - [Resource Management](#resource-management)
@@ -44,30 +44,30 @@ So you should definitely doubt anything you read here and you are more than welc
     - [Git Repositories](#git-repositories-1)
     - [GitOps Management](#gitops-management)
     - [Sync Strategy](#sync-strategy)
-  - [Monitoring](#monitoring)
-  - [Chaos Engineering](#chaos-engineering)
+  - [Monitoreo](#monitoring)
+  - [Ingeniería del caos](#chaos-engineering)
   - [IaC](#iac)
     - [The Chosen One](#the-chosen-one)
-    - [Implementation](#implementation)
+    - [Implementación](#implementation)
   - [Terraform](#terraform)
-    - [Development and CI/CD](#development-and-cicd)
+    - [Desarrollo y CI/CD](#development-and-cicd)
     - [State](#state)
-    - [Terraform Projects File Structure](#terraform-projects-file-structure)
+    - [Estructura de los archivos de Terraform](#terraform-projects-file-structure)
     - [Terraform Code](#terraform-code)
-      - [Modules](#modules)
+      - [Módulos](#modules)
     - [Git](#git)
     - [Cloud](#cloud-1)
-    - [Secrets](#secrets)
+    - [Secretos](#secrets)
 
 ## Team :couple:
 
-### Responsibilities
+### Responsabilidades
 
 - [ ] **Decide on responsibilities**
   - Common
     - [ ] Infrastructure management
-    - [ ] Monitoring
-    - [ ] Incident Management
+    - [ ] Monitoreo
+    - [ ] Manejo de incidentes
     - [ ] Infra and Reliability related automation
   - [ ] Arguable
     - [ ] App Performance - Arguable because some organizations treat it as dev responsibility
@@ -88,14 +88,14 @@ So you should definitely doubt anything you read here and you are more than welc
   - IaC and CM is how you manage infra and operations through code. If you do your work as SRE manually and using ad-hoc commands or UI, you probably want to reconsider your approach and obtain some IaC (Infrastructure as Code) and CM (configuration management) skills and knowledge
 
 
-#### Optional
+#### Opcional
 
-Some will argue that the following skills and topics shouldn't be optional and are 100% must, but in my personal view they very much depend on your responsibilities as SRE and your work environment. If your environment consists mostly of bare metal (physical) servers for example and there are no containers, then why containers is a must for you?
+Algunos argumentarán que las siguientes habilidades y temas no deberían ser opcionales y que son 100 % obligatorios, pero en mi opinión personal dependen mucho de tus responsabilidades como SRE y de tu entorno de trabajo. Si tu entorno consiste principalmente en servidores físicos, por ejemplo, y no hay contenedores, entonces ¿por qué los contenedores son una necesidad para ti?
 
-- [ ] Containers
+- [ ] Contenedores
 - [ ] Kubernetes
 - [ ] Cloud
-- [ ] Virtualization
+- [ ] Virtualización
 
 ### Processes
 
@@ -150,36 +150,36 @@ Some will argue that the following skills and topics shouldn't be optional and a
 * [ ] Time to deep dive into operations
   * TODO: add some items :)
 
-## Production
+## Producción
 
-### Requirements
+### Requerimientos
 
-- [ ] What are the requirements for going to production?
+- [ ] ¿Cuáles son los requisitos para pasar a producción?
 
-### Provisioning
+### Aprovisionamiento
 
-- [ ] How do you provision the infrastructure required for deploying the application? (Terraform, Pulumi, CloudFormation, ...)
+- [ ] ¿Cómo se aprovisiona la infraestructura necesaria para desplegar la aplicación? (Terraform, Pulumi, CloudFormation, ...)
 
-### Installation
+### Instalación
 
-- [ ] How to install the application and its dependencies? (Container, Bash Script, Ansible, ...)
+- [ ] ¿Cómo instalar la aplicación y sus dependencias? (Contenedor, Bash Script, Ansible, ...)
 
-### Deployment
+### Despliegue
 
-- [ ] How to deploy the application or the application service? (k8s, cloud instances)
+- [ ] ¿Cómo desplegar la aplicación o el servicio de aplicación? (k8s, cloud instances)
 
-### Configuration
+### Configuración
 
-- [ ] How to configure the application? (k8s, Ansible, ...)
+- [ ] ¿Cómo configurar la aplicación? (k8s, Ansible, ...)
 
-### Resiliency
+### Resilencia
 
-- [ ] Your app is able to withstand outages (usually by implement multi-region or multi-cloud architectures)
-- [ ] Your app will scale up and down in response to load change
+- [ ] Tu aplicación es capaz de soportar interrupciones (generalmente implementando arquitecturas multirregión o multicloud)
+- [ ] Tu aplicación aumentará y disminuirá en respuesta a los cambios de carga.
 
-## Technologies :computer:
+## Tecnologías :computer:
 
-### Git Repositories
+### Repositorios Git
 
 #### CI
 
@@ -188,25 +188,25 @@ Some will argue that the following skills and topics shouldn't be optional and a
   - [ ] Unit tests
   - [ ] E2E testing
 
-#### Security
+#### Seguridad
 
-- [ ] Least Privilege and Zero Trust
-  - [ ] Make sure only people from team/company have access to the repositories
+- [ ] Privilegios mínimos y política Zero Trust
+  - [ ] Asegúrate que solo las personas del equipo/compañía tengan accesos a los repositorios
 
-#### Automation
+#### Automatización
 
-  - [ ] This is quite advanced but still, you may want to consider automating repositories creation and access control (using technologies like Terraform or programming languages, you can automate fully the process of repositories management)
+  - [ ] Esto es bastante avanzado, pero aún así, puede que quieras considerar automatizar la creación de repositorios y el control de acceso (usando tecnologías como Terraform o lenguajes de programación, puedes llegar a automatizar completamente el proceso de gestión de repositorios).
 
 ### Cloud
 
-#### Provisioning
+#### Aprovisionamiento
 
-- [ ] Resources managed through IaC technologies such as Terrform, Pulumti, etc.
-  - If at any point you need restore you entire infrastructure you have the code to do so and can perform it quite quickly
+- [ ] Recursos manejados mediante Infraestructura como código como Terraform, Pulumi, etc.
+  - Si en algún momento necesitas restaurar toda tu infraestructura, tiene el código para hacerlo y puedes hacerlo con bastante rapidez.
 
-#### Tracking and Monitoring
+#### Seguimiento y control
 
-  - [ ] Resources are tagged, labeled
+  - [ ] Los recursos deben tener tags
     - [ ] Env (e.g. staging, prod, dev)
     - [ ] Owner (e.g. team)
 
@@ -237,15 +237,15 @@ Some will argue that the following skills and topics shouldn't be optional and a
 
 #### Cluster Management
 
-- [ ] Cluster for each environment? Dev, QA, Staging, Production
-  - [ ] Per region? Per cloud? How distributed your environment should be?
+- [ ] ¿Cluster por cada ambiente? Dev, QA, Staging, Production
+  - [ ] Por región? Por nube? ¿Cómo de distribuido debe estar tu entorno?
 - [ ] Cluster Policy Management
   - [ ] Networking Policies
   - [ ] Storage Policies
 
 ### GitOps - ArgoCD
 
-#### Git Repositories
+#### Repositorios Git
 
 - [ ] Infra code (Manifests, Configurations, etc.) is in a separate repository (and not in application repository)
 
@@ -268,13 +268,13 @@ Some will argue that the following skills and topics shouldn't be optional and a
 - [ ] Auto Prune (resources deleted when files/content deleted)
 - [ ] Self-heal (cluster state corrected based on Git state and when manual changes done to the cluster)
 
-### Monitoring
+### Monitoreo
 
 - [ ] Choose monitoring solution
   - If you can afford it, go for ready monitoring solutions like DataDog, NewRelic, ...
   - Be aware of maintenance and how much time you are willing to invest in maintaining monitoring solution
 
-### Chaos Engineering
+### Ingeniería del caos
 
 The interesting topic of ensuring your environment can withstand unexpected disruptions
 
@@ -284,19 +284,19 @@ TODO: insert a list of steps to go towards the process of establishing and integ
 
 #### The Chosen One
 
-- Things to consider when choosing IaC technology:
-  - Maturity (new vs. well established and known)
-  - Community and support
-  - Number of integrations, plugins, providers, modules, ...
+- Aspectos a tener en consideración a la hora de elegir la herramienta IaC:
+  - Madurez (nuevo vs. establecido y conocido)
+  - Comunidad y soporte
+  - Número de integraciones, plugins, proveedores, módulos, ...
 
-#### Implementation
+#### Implementación
 
 - [ ] Follow DRY (Don't Repeat Yourself) principle as in make sure there are no code duplication so when you change parameter's value for example, you don't need to change it in two different place
 - [ ] Readable code - use naming conventions, formatting, ... make sure anyone can read the code and doesn't suffer much in doing so :)
 
 ### Terraform
 
-#### Development and CI/CD
+#### Desarrollo y CI/CD
 
   - [ ] CI pipeline to test Terraform changes (syntax, lint, ...)
     - Consider inserting cost considerations (e.g. test whether a change will raise the bill significantly if you are using a public cloud)
@@ -316,7 +316,7 @@ TODO: insert a list of steps to go towards the process of establishing and integ
 
 #### Terraform Projects File Structure
 
-- [ ] Separate directory for each environment (staging, production, ...)
+- [ ] Directorios separados por cada ambiente de desarrollo (staging, production, ...)
 - [ ] Separate backend for each environment (as you don't want share the same authentication and access controls for all environments)
 - [ ] Separate directory in each environment for each component and application
 
@@ -369,8 +369,8 @@ TODO: insert a list of steps to go towards the process of establishing and integ
 
 ##### Modules
 
-- [ ] Avoid duplication of Terraform code/configuration by using modules
-- [ ] Try to make modules reusable as much as possible
+- [ ] Evita la duplicación de código o configuración en Terraform usando módulos
+- [ ] Trata de crear módulos lo más reusables posibles
   - [ ] Don't include provider code in a reusable module. Different teams and organizations can use different provider versions and constraints (e.g. different default tags)
 - [ ] Avoid hardcoding values, especially in the case reusable modules. To make them reusable, values will have to come from input variables
 - [ ] Consider using only separate resources in a module and not inline blocks as they may limit you at some point or another when reusing the module
@@ -406,7 +406,7 @@ resource "some_instance" "instance" {
 
 #### Secrets
 
-- [ ] **Basics!**
+- [ ] **Básico!**
   - [ ] DON'T store credentials in Terraform configuration as it's highly insecure
   - [ ] Eventually sensitive data will end up in your state file, for this reason make sure it's encrypted and only visible to those who should be able to access it
     - [ ] Same applies for plan files
@@ -430,12 +430,12 @@ resource "some_instance" "instance" {
   context:
     - some-context
   ```
-- [ ] Secrets in Terraform Configuration
+- [ ] Secretos en configuraciones de Terraform
   - [ ] Consider how you would like to manage secrets inside Terraform configuration files
-    - **Environment Variables** - you define Terraform variables (with `sensitive = true`) and pass values with environment variables
+    - **Variables de entorno** - you define Terraform variables (with `sensitive = true`) and pass values with environment variables
       - pros: simple to use, no need to store sensitive data inside Terraform code
       - cons: managed outside of Terraform so tracking, enforcing, managing for different environments, ... is challenging or not feasible
-    - **Encrypted Files** - encrypting the secret and storing the encrypted secrets in Terraform configurations
+    - **Archivos encriptados** - encrypting the secret and storing the encrypted secrets in Terraform configurations
       - pros: secrets are encrypted and are of Terraform code and part of the version control system
       - cons: working this way can be cumbersome (to modify, you first have to decrypt, makes the changes and then encrypt it again). Still holds security risk if someone gets their hands on the decryption key
     - **Secret Store** - centralized secret store
