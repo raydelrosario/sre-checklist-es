@@ -7,7 +7,9 @@
 **Nota**: Estos checklist son **opiniones**. Se basan en mi propia opinión y experiencia, no son verdades universales  (duh! :smile:).
 Así que no deberías dudar de lo que leas aquí y eres más que bienvenido a añadir tu propia opinión sobre el asunto, iniciando un debate o proponiendo un cambio en el [proyecto](https://github.com/bregman-arie/sre-checklist).
 
-:construction: Se puede decir que este repositorio está todavía en progreso (y la traducción también). Yo no lo trataría algo totalmente completo en este momento ni nada que se le parezca. ¡Las contribuciones son más que bienvenidas!
+**Nota del traductor**: Este trabajo le corresponde a [Arie Bregman](https://github.com/bregman-arie) del [proyecto en inglés](https://github.com/bregman-arie/sre-checklist). Cualquier asunto con la traducción, no dudes crear un Issue o Pull request.
+
+:construction: Se puede decir que este repositorio está todavía en progreso. Yo no lo trataría algo totalmente completo en este momento ni nada que se le parezca. ¡Las contribuciones son más que bienvenidas!
 
 - [Team :couple:](#team-couple)
   - [Responsabilidades](#responsibilities)
